@@ -1,0 +1,282 @@
+{
+    "Influenza": {
+      "severity": "Moderate",
+      "see_doctor": "If symptoms persist beyond a few days or worsen.",
+      "self_care": "Stay hydrated, rest, and use over-the-counter medicine.",
+      "symptoms": "Fever, chills, cough, sore throat, body aches, fatigue.",
+      "causes": "Influenza virus, spread through droplets from cough or sneeze.",
+      "prevention": "Annual flu vaccine, frequent hand washing, avoid close contact with sick individuals.",
+      "treatment": "Rest, hydration, antiviral medications."
+    },
+    "Migraine": {
+      "severity": "Moderate",
+      "see_doctor": "If headaches are severe or frequent.",
+      "self_care": "Dark, quiet room, hydration, avoid triggers.",
+      "symptoms": "Severe headache, nausea, sensitivity to light and sound.",
+      "causes": "Genetic factors, hormonal changes, certain foods, stress.",
+      "prevention": "Avoid known triggers, regular sleep, stress management.",
+      "treatment": "Pain relief medications, preventive migraine drugs."
+    },
+    "Heart Attack": {
+      "severity": "Emergency",
+      "see_doctor": "Immediately call emergency services.",
+      "self_care": "Not applicable. Seek medical help right away.",
+      "symptoms": "Chest pain, shortness of breath, sweating, nausea.",
+      "causes": "Blocked blood flow to the heart, often due to plaque buildup in arteries.",
+      "prevention": "Healthy diet, regular exercise, no smoking, control blood pressure.",
+      "treatment": "Immediate emergency care, medications, possibly surgery."
+    },
+    "Allergy": {
+      "severity": "Low",
+      "see_doctor": "If over-the-counter medications don’t help.",
+      "self_care": "Avoid allergens, use antihistamines.",
+      "symptoms": "Sneezing, itchy eyes, runny nose, skin rash.",
+      "causes": "Immune system overreaction to harmless substances like pollen or dust.",
+      "prevention": "Avoid exposure to allergens, use air filters, wear masks.",
+      "treatment": "Antihistamines, nasal sprays, allergy shots."
+    },
+    "Food Poisoning": {
+      "severity": "Moderate",
+      "see_doctor": "If symptoms last more than 2 days or include high fever.",
+      "self_care": "Hydration, bland food, rest.",
+      "symptoms": "Diarrhea, nausea, vomiting, stomach cramps.",
+      "causes": "Bacteria, viruses, or toxins in contaminated food or water.",
+      "prevention": "Wash hands, cook food thoroughly, avoid unpasteurized dairy.",
+      "treatment": "Hydration, antibiotics if bacterial, over-the-counter anti-nausea medications."
+    },
+    "Common Cold": {
+      "severity": "Low",
+      "see_doctor": "Only if symptoms last more than 10 days.",
+      "self_care": "Rest, fluids, warm liquids, decongestants.",
+      "symptoms": "Runny nose, sore throat, cough, mild fever.",
+      "causes": "Rhinoviruses, spread through airborne droplets or touching infected surfaces.",
+      "prevention": "Frequent hand washing, avoid close contact with sick individuals.",
+      "treatment": "Over-the-counter cold medications, rest, hydration."
+    },
+    "Asthma": {
+      "severity": "Variable",
+      "see_doctor": "If breathing is difficult or frequent attacks occur.",
+      "self_care": "Avoid triggers, use inhalers.",
+      "symptoms": "Wheezing, shortness of breath, chest tightness, coughing.",
+      "causes": "Allergens, exercise, air pollution, respiratory infections.",
+      "prevention": "Avoid triggers, regular use of inhalers, proper medication.",
+      "treatment": "Inhalers, steroids, bronchodilators."
+    },
+    "Skin Allergy": {
+      "severity": "Low",
+      "see_doctor": "If rash worsens or spreads.",
+      "self_care": "Topical creams, antihistamines.",
+      "symptoms": "Itchy skin, red or inflamed rash.",
+      "causes": "Allergic reaction to substances like pollen, insect bites, or certain fabrics.",
+      "prevention": "Avoid allergens, use gentle skin care products.",
+      "treatment": "Topical corticosteroids, antihistamines."
+    },
+    "Urinary Tract Infection": {
+      "severity": "Moderate",
+      "see_doctor": "Yes, antibiotics usually required.",
+      "self_care": "Drink plenty of water, avoid irritants.",
+      "symptoms": "Frequent urination, burning sensation, cloudy urine, pelvic pain.",
+      "causes": "Bacterial infection in the urinary tract, often caused by E. coli.",
+      "prevention": "Good hygiene, drink plenty of water, urinate after sex.",
+      "treatment": "Antibiotics, pain relievers."
+    },
+    "Diabetes": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, for medication and lifestyle guidance.",
+      "self_care": "Monitor blood sugar, diet, exercise.",
+      "symptoms": "Increased thirst, frequent urination, fatigue, blurred vision.",
+      "causes": "Insulin resistance or lack of insulin production.",
+      "prevention": "Healthy diet, regular exercise, maintain healthy weight.",
+      "treatment": "Insulin therapy, oral medications, lifestyle changes."
+    },
+    "Arthritis": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, to manage pain and inflammation.",
+      "self_care": "Gentle exercise, anti-inflammatory diet.",
+      "symptoms": "Joint pain, stiffness, swelling, difficulty moving.",
+      "causes": "Wear and tear on joints, autoimmune diseases.",
+      "prevention": "Maintain healthy weight, regular exercise.",
+      "treatment": "Pain relievers, anti-inflammatory medications, physical therapy."
+    },
+    "Tuberculosis": {
+      "severity": "High",
+      "see_doctor": "Yes, requires long-term antibiotic treatment.",
+      "self_care": "Isolate, take medications as prescribed.",
+      "symptoms": "Coughing up blood, weight loss, fever, night sweats.",
+      "causes": "Mycobacterium tuberculosis, spread through airborne particles.",
+      "prevention": "BCG vaccine, early detection, avoiding close contact with infected individuals.",
+      "treatment": "Long-term antibiotics, isolation during active infection."
+    },
+    "Dengue": {
+      "severity": "Moderate to High",
+      "see_doctor": "Yes, especially if bleeding or dehydration occurs.",
+      "self_care": "Fluids, rest, paracetamol.",
+      "symptoms": "High fever, severe headache, pain behind the eyes, rash.",
+      "causes": "Mosquito-borne virus, transmitted by Aedes mosquitoes.",
+      "prevention": "Avoid mosquito bites, use insect repellent, wear long sleeves.",
+      "treatment": "Supportive care, fluids, pain relief."
+    },
+    "Zika Virus": {
+      "severity": "Low to Moderate",
+      "see_doctor": "If pregnant or symptoms worsen.",
+      "self_care": "Hydration, rest, avoid mosquito bites.",
+      "symptoms": "Fever, rash, joint pain, conjunctivitis.",
+      "causes": "Zika virus, transmitted by Aedes mosquitoes.",
+      "prevention": "Avoid mosquito bites, use repellent, wear protective clothing.",
+      "treatment": "Supportive care, rest, fluids."
+    },
+    "Hepatitis": {
+      "severity": "Moderate to High",
+      "see_doctor": "Yes, especially for jaundice or liver symptoms.",
+      "self_care": "Avoid alcohol, rest, hydration.",
+      "symptoms": "Fatigue, nausea, jaundice, abdominal pain.",
+      "causes": "Viral infections, heavy alcohol use, autoimmune diseases.",
+      "prevention": "Hepatitis vaccine, avoid sharing needles, limit alcohol consumption.",
+      "treatment": "Antiviral medications, liver care."
+    },
+    "COVID-19": {
+      "severity": "Variable",
+      "see_doctor": "If symptoms are severe (breathing issues).",
+      "self_care": "Isolation, fluids, rest.",
+      "symptoms": "Fever, cough, shortness of breath, fatigue.",
+      "causes": "SARS-CoV-2 virus, spread through respiratory droplets.",
+      "prevention": "Wear masks, social distancing, hand hygiene, vaccination.",
+      "treatment": "Supportive care, antivirals, oxygen therapy if severe."
+    },
+    "Hypothyroidism": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, requires hormone therapy.",
+      "self_care": "Regular medication, monitor thyroid levels.",
+      "symptoms": "Fatigue, weight gain, constipation, dry skin, sensitivity to cold.",
+      "causes": "Underactive thyroid gland, often due to autoimmune diseases or iodine deficiency.",
+      "prevention": "Regular thyroid function tests, adequate iodine intake.",
+      "treatment": "Thyroid hormone replacement therapy."
+    },
+    "Parkinson's Disease": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, for long-term management.",
+      "self_care": "Physical therapy, medication adherence.",
+      "symptoms": "Tremors, stiffness, bradykinesia, difficulty balancing.",
+      "causes": "Genetic factors, environmental exposures.",
+      "prevention": "No known prevention, but exercise and healthy diet help.",
+      "treatment": "Medications, physical therapy, deep brain stimulation."
+    },
+    "Alzheimer's Disease": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, for symptom management and support.",
+      "self_care": "Cognitive exercises, safe environment.",
+      "symptoms": "Memory loss, confusion, difficulty with tasks.",
+      "causes": "Neurodegeneration, genetics, age-related factors.",
+      "prevention": "Mental stimulation, healthy lifestyle, social engagement.",
+      "treatment": "Memory aids, medications to improve symptoms."
+    },
+    "Diabetes Type 2": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, for medication and lifestyle changes.",
+      "self_care": "Diet control, exercise, monitor sugar.",
+      "symptoms": "Increased thirst, frequent urination, blurred vision.",
+      "causes": "Insulin resistance, obesity, genetic factors.",
+      "prevention": "Healthy eating, regular physical activity.",
+      "treatment": "Lifestyle changes, oral medications, insulin if necessary."
+    },
+    "Pneumonia": {
+      "severity": "Moderate to High",
+      "see_doctor": "Yes, especially for elderly or infants.",
+      "self_care": "Antibiotics if bacterial, rest, fluids.",
+      "symptoms": "Cough, fever, chest pain, difficulty breathing.",
+      "causes": "Bacterial, viral, or fungal infections in the lungs.",
+      "prevention": "Vaccination, good hygiene, avoiding sick people.",
+      "treatment": "Antibiotics, antiviral medications, oxygen therapy."
+    },
+    "Stroke": {
+      "severity": "Emergency",
+      "see_doctor": "Immediately seek emergency care.",
+      "self_care": "Emergency — no self-care.",
+      "symptoms": "Sudden numbness or weakness, confusion, trouble speaking or seeing.",
+      "causes": "Blood flow disruption to the brain, either due to a blockage or bleeding.",
+      "prevention": "Control blood pressure, quit smoking, healthy diet, regular exercise.",
+      "treatment": "Emergency medical care, thrombolytic therapy, surgery."
+    },
+    "Depression": {
+      "severity": "Moderate to High",
+      "see_doctor": "Yes, especially if prolonged.",
+      "self_care": "Talk therapy, lifestyle changes, support.",
+      "symptoms": "Sadness, hopelessness, lack of interest, fatigue.",
+      "causes": "Genetics, brain chemistry, stressful life events.",
+      "prevention": "Regular exercise, stress management, social support.",
+      "treatment": "Therapy, antidepressant medications."
+    },
+    "Strep Throat": {
+      "severity": "Moderate",
+      "see_doctor": "Yes, requires antibiotics.",
+      "self_care": "Rest, hydration, salt water gargle.",
+      "symptoms": "Sore throat, fever, difficulty swallowing, red tonsils.",
+      "causes": "Streptococcus bacteria, spread through respiratory droplets.",
+      "prevention": "Good hygiene, avoid close contact with infected individuals.",
+      "treatment": "Antibiotics, pain relievers."
+    },
+    "Ear Infection": {
+      "severity": "Low to Moderate",
+      "see_doctor": "If severe pain or fever.",
+      "self_care": "Warm compress, pain relievers.",
+      "symptoms": "Ear pain, drainage from the ear, difficulty hearing.",
+      "causes": "Bacterial or viral infection in the middle ear.",
+      "prevention": "Avoid putting objects in the ear, manage allergies.",
+      "treatment": "Antibiotics if bacterial, pain relievers, warm compress."
+    },
+    "IBS": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, for diagnosis and management.",
+      "self_care": "Low FODMAP diet, stress management.",
+      "symptoms": "Abdominal pain, bloating, diarrhea, constipation.",
+      "causes": "Intestinal sensitivity, stress, certain foods.",
+      "prevention": "Dietary changes, stress management.",
+      "treatment": "Medications for symptoms, dietary changes."
+    },
+    "Multiple Sclerosis": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, long-term management required.",
+      "self_care": "Healthy lifestyle, avoid heat.",
+      "symptoms": "Numbness, muscle weakness, vision problems.",
+      "causes": "Immune system attacks the nervous system.",
+      "prevention": "No known prevention, but early treatment helps.",
+      "treatment": "Medications, physical therapy."
+    },
+    "Appendicitis": {
+      "severity": "Emergency",
+      "see_doctor": "Yes, surgical intervention needed.",
+      "self_care": "None — seek emergency surgery.",
+      "symptoms": "Abdominal pain, nausea, vomiting, fever.",
+      "causes": "Inflammation of the appendix, often due to blockage.",
+      "prevention": "No known prevention.",
+      "treatment": "Surgery to remove the appendix."
+    },
+    "PCOS": {
+      "severity": "Chronic",
+      "see_doctor": "Yes, for hormonal management.",
+      "self_care": "Diet, exercise, weight management.",
+      "symptoms": "Irregular periods, excess hair growth, acne.",
+      "causes": "Hormonal imbalance, genetics.",
+      "prevention": "Maintain a healthy weight, manage insulin levels.",
+      "treatment": "Hormonal treatments, lifestyle changes."
+    },
+    "Diabetic Ketoacidosis": {
+      "severity": "Emergency",
+      "see_doctor": "Immediate ER care required.",
+      "self_care": "Monitor for symptoms in diabetics.",
+      "symptoms": "Nausea, vomiting, excessive thirst, confusion.",
+      "causes": "Severe insulin deficiency, often due to poorly controlled diabetes.",
+      "prevention": "Monitor blood sugar levels regularly.",
+      "treatment": "Insulin therapy, electrolyte management."
+    },
+    "Sciatica": {
+      "severity": "Moderate",
+      "see_doctor": "If pain persists or worsens.",
+      "self_care": "Stretching, pain relief, posture.",
+      "symptoms": "Pain radiating from the lower back to the legs, numbness.",
+      "causes": "Herniated disc, spinal stenosis, or nerve irritation.",
+      "prevention": "Good posture, regular exercise, weight management.",
+      "treatment": "Pain relievers, physical therapy, surgery if needed."
+    }
+  }
+  

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>🩺 AI Health Advisor - Disease Info</title>
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(50, 115, 220, 0.2);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #2C73D2;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            padding: 14px;
+            width: 70%;
+            margin-bottom: 20px;
+            border: 2px solid #b3cde0;
+            border-radius: 8px;
+            font-size: 1em;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #2C73D2;
+        }
+
+        button {
+            background-color: #2C73D2;
+            color: white;
+            padding: 14px 25px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 30%;
+        }
+
+        button:hover {
+            background-color: #1e5aa3;
+        }
+
+        .info-box {
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h2 {
+            font-size: 2em;
+            color: #e74c3c;
+            text-align: center;
+        }
+
+        .info-box p {
+            font-size: 1.2em;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .disclaimer {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 1.1em;
+            }
+
+            input[type="text"], button {
+                font-size: 1em;
+                width: 80%;
+            }
+
+            .info-box h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 AI Health Advisor - Disease Information</h1>
+        <p class="tagline">Enter a disease name to get detailed information and advice 🤖</p>
+
+        <form method="GET" action="{{ url_for('disease_info') }}">
+            <input type="text" name="disease" placeholder="Enter disease name" required>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if info %}
+            <div class="info-box">
+                <h2>{{ disease_name }}</h2>
+                <p><strong>Severity:</strong> {{ info.severity }}</p>
+                <p><strong>See Doctor:</strong> {{ info.see_doctor }}</p>
+                <p><strong>Self Care:</strong> {{ info.self_care }}</p>
+                {% if info.symptoms %}
+                    <p><strong>Symptoms:</strong> {{ info.symptoms }}</p>
+                {% endif %}
+                {% if info.causes %}
+                    <p><strong>Causes:</strong> {{ info.causes }}</p>
+                {% endif %}
+                {% if info.prevention %}
+                    <p><strong>Prevention:</strong> {{ info.prevention }}</p>
+                {% endif %}
+                {% if info.treatment %}
+                    <p><strong>Treatment:</strong> {{ info.treatment }}</p>
+                {% endif %}
+            </div>
+        {% elif searched %}
+            <p><strong>No data found</strong> for '{{ searched }}'</p>
+        {% endif %}
+
+        <p class="disclaimer">
+            ⚠️ This information is AI-generated and not a replacement for professional medical advice. Always consult a healthcare professional.
+        </p>
+    </div>
+</body>
+</html>

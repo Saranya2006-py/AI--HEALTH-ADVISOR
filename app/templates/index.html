@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🩺 AI Health Advisor</title>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png.png') }}">
+
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="{{ url_for('static', filename='js/autocomplete.js') }}"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(45deg, #ff6f61, #6a1b9a, #2196f3);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: linear-gradient(135deg, #ffffff,rgb(56, 212, 48));
+      border-radius: 15px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.2em;
+      color: #d32f2f;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px #ffccbc;
+    }
+
+    .tagline {
+      font-size: 1.2em;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .benefits {
+      background: linear-gradient(135deg, #d1c4e9,rgb(231, 234, 9));
+      border-left: 6px solidrgb(171, 209, 68);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      color: #2e2e2e;
+    }
+
+    .benefits h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #4527a0;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding-left: 0;
+      line-height: 1.8;
+    }
+
+    .benefits ul li {
+      font-size: 1.05rem;
+      color: #222;
+    }
+
+    label {
+      font-size: 1.1em;
+      color: #333;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 2px solid #90caf9;
+      border-radius: 10px;
+      font-size: 1em;
+      background-color: #e3f2fd;
+      transition: border 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #1976d2;
+    }
+
+    button {
+      background: linear-gradient(90deg, #42a5f5, #1e88e5);
+      color: #fff;
+      padding: 14px 25px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(30, 136, 229, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #1e88e5, #1565c0);
+    }
+
+    #loader {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #loader i {
+      font-size: 28px;
+      color: #1565c0;
+    }
+
+    .disclaimer {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 35px;
+      background-color: #fff3cd;
+      border-left: 6px solid #ff9800;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+
+      .benefits {
+        padding: 15px;
+      }
+
+      input[type="text"],
+      button {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🩺 AI Health Advisor</h1>
+    <p class="tagline">Your smart assistant to predict possible diseases based on your symptoms 🤖</p>
+
+    <!-- Benefits Section -->
+    <div class="benefits">
+      <h3><i class="fas fa-lightbulb"></i> Why Use AI Health Advisor?</h3>
+      <ul>
+        <li>🔍 Analyze symptoms instantly using AI</li>
+        <li>📋 Get personalized health insights</li>
+        <li>🧑‍⚕️ Know when to seek professional help</li>
+        <li>🌐 Access from anywhere, anytime</li>
+      </ul>
+    </div>
+
+    <!-- Input Form -->
+    <form action="/predict" method="POST">
+      <label for="symptoms">📝 Enter Symptoms (comma-separated):</label>
+      <input type="text" id="symptoms" name="symptoms" required>
+      <button type="submit">Get Prediction</button>
+    </form>
+
+    <!-- Loader Icon -->
+    <div id="loader">
+      <i class="fas fa-spinner fa-spin"></i>
+      <p>Analyzing your symptoms...</p>
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="disclaimer">
+      ⚠️ This is an AI-powered tool and does not replace medical advice. Always consult a healthcare professional.
+    </p>
+  </div>
+
+  <script>
+    const form = document.querySelector("form");
+    const loader = document.getElementById("loader");
+    form.addEventListener("submit", () => {
+      loader.style.display = "block";
+    });
+  </script>
+</body>
+</html>
